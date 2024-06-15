@@ -184,6 +184,7 @@
     --color-dark-gray: #404040;
     --color-light-gray: #c4c4c4;
     --color-light-green: #569b4a;
+    --color-dark-green: #16251C;
 
     --border-radius: 30px;
     --border: 1px solid var(--color-light); 
@@ -197,6 +198,8 @@
     --container-padding-x: 15px;
 
     --transition-duration: 0.3s;
+
+    --header-height: 90px;
 
  } 
  
@@ -260,17 +263,20 @@ transition-duration: var(--transition-duration);
   justify-content: space-between;
   align-items: center;
   column-gap: 20px;
+  padding-inline: 32px;
+  min-height: var(--header-height);
  }
 
 .header-menu-list {
   display: flex;
   column-gap: 50px;
+  flex-wrap: wrap;
 }
 
 .header-menu-link {
   display: inline-flex;
   align-items: center;
-  height: 90px;
+  height: var(--header-height);
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
@@ -308,8 +314,116 @@ column-gap: 7px;
   .header-burger-button-line {
     top: 5px;
     left: 5px;
-    width: 6px;
+    width: 12px;
     height: 1px;
     background-color: var(--color-light);
 
   }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 36px 70px;
+    min-height: calc(100vh - var(h));
+    color: var(--color-light);
+    background-color: var(--color-dark-green);
+  }
+
+  .banner-body{
+    text-transform: uppercase;
+  }
+
+  .banner-info{
+    display: flex;
+    align-items: end;
+    font-size: clamp(16px, 1.56vw, 30px);
+    line-height: 1.27;
+    font-weight: 700;
+  }
+
+  .banner-info::before{
+    content: '';
+    width: clamp(60px, 10.1vw, 194px);
+    aspect-ratio: 1;
+    background: url(/icons/cactus.svg) center/contain no-repeat;
+    margin-right: 30px
+  }
+
+  .banner-title{
+    font-size: min(18.75vw, 360px);
+    line-height: 1;
+  }
+
+  .more{
+    background-color: var(--color-light);
+    color: var(--color-dark);
+  }
+
+  @media (max-width: 1100px) {
+    header {
+      flex-wrap: wrap;
+      padding-top: 20px;
+    }
+
+    header, 
+    .banner{
+      padding-inline: 15px;
+    }
+    
+    .header-menu {
+      order: 1;
+      flex-basis: 100%;
+    }
+    
+    .header-menu-link{
+      height: 50px;
+    }
+    
+    .header-logo-img{
+      height: 60%;
+      width: 60%;
+    }
+
+    .banner-info{
+      margin-top: 5px;
+    }
+
+    .banner-info::before{
+      margin-right: 10px;
+    }
+
+    .banner{
+      row-gap: 10px;
+    }
+
+      }
+
+      @media (max-width: 750px) {
+        header{
+          padding-top: 10px;
+          column-gap: 10px;
+        }
+        
+        .header-menu-list{
+        height: 50px;
+        column-gap: 10px;
+        }
+      
+        .button {
+          padding-inline: 15px;
+        }
+      }
