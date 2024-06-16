@@ -445,4 +445,9 @@ column-gap: 7px;
         .button {
           padding-inline: 15px;
         }
+
+      table{
+        display:flex;
+        justify-content: start;
+      }
       }
