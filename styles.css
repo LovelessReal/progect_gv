@@ -383,6 +383,15 @@ column-gap: 7px;
   flex-direction: row-reverse;
 }
 
+.transparent {
+  color: var(--color-dark);
+  text-decoration: none;
+}
+
+.transparent:hover{ 
+  color: var(--color-dark);
+}
+
   @media (max-width: 1100px) {
     header {
       flex-wrap: wrap;
