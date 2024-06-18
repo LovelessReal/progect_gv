@@ -123,6 +123,7 @@
  select,
  button {
    font: inherit;
+   color: inherit;
  }
  
  html {
