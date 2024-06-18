@@ -434,7 +434,7 @@ grid-column-end: 4;
 
 .question {
   margin: 30px;
-  font-size: clamp(15px, 20px, 30px);
+  font-size: clamp(15px, 25px, 35px);
   color: var(--color-light);
 }
 
