@@ -388,15 +388,13 @@ column-gap: 7px;
   text-decoration: none;
 }
 
-.transparent:hover{ 
+.transparent:hover { 
   color: var(--color-dark);
 }
 
-
-
 .body-title-survay {
   font-family: var(--font-family-alternative);
-  font-size: clamp(35px, 10vw, 150px);
+  font-size: clamp(35px, 10vw, 120px);
   margin: 20px 20px;
 }
 
