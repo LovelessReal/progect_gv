@@ -359,7 +359,7 @@ column-gap: 7px;
     content: '';
     width: clamp(60px, 10.1vw, 194px);
     aspect-ratio: 1;
-    background: url(/icons/cactus.svg) center/contain no-repeat;
+    background: url(./icons/cactus.svg) center/contain no-repeat;
     margin-right: 30px
   }
 
@@ -390,6 +390,23 @@ column-gap: 7px;
 
 .transparent:hover{ 
   color: var(--color-dark);
+}
+
+.table-social-survay {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3 250px);
+  gap: 1px;
+}
+
+.grid-element {
+  min-height: 100px;
+  background-color: #16251C;
+}
+
+.big {
+grid-column-start: 1;
+grid-column-end: 4;
 }
 
   @media (max-width: 1100px) {
