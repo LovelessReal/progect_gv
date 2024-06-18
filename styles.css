@@ -392,6 +392,8 @@ column-gap: 7px;
   color: var(--color-dark);
 }
 
+
+
 .body-title-survay {
   font-family: var(--font-family-alternative);
   font-size: clamp(35px, 10vw, 150px);
