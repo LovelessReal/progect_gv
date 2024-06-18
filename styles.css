@@ -420,6 +420,7 @@ grid-column-end: 4;
 .form-to-the-survay, .general-information-title {
   color: var(--color-light);
   font-size: clamp(20px, 30px, 50px);
+  margin: 20px auto 20px 50px;
 }
 
 .form-to-the-survay {
