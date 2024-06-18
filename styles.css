@@ -392,11 +392,21 @@ column-gap: 7px;
   color: var(--color-dark);
 }
 
+.body-title-survay {
+  font-family: var(--font-family-alternative);
+  font-size: clamp(35px, 10vw, 150px);
+  margin: 20px 20px;
+}
+
 .table-social-survay {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(3 250px);
+  grid-template-rows: repeat(3  200px);
   gap: 1px;
+  font-size: 20px;
+  text-align: center;
+  line-height: auto;
+  font-family: var(--font-family-alternative);
 }
 
 .grid-element {
