@@ -200,7 +200,6 @@
     --transition-duration: 0.3s;
 
     --header-height: 90px;
-
  } 
  
  body {
@@ -226,7 +225,6 @@ color: var(--color-light-green);
   svg * {
 transition-duration: var(--transition-duration);
   }
-
 
  .container {
   max-width: calc(var(--container-width) + var(--container-padding-x)*2);
@@ -317,7 +315,6 @@ column-gap: 7px;
     width: 12px;
     height: 1px;
     background-color: var(--color-light);
-
   }
 
   .visually-hidden {
@@ -392,10 +389,11 @@ column-gap: 7px;
   color: var(--color-dark);
 }
 
-.body-title-survay {
+.main-title-survay {
   font-family: var(--font-family-alternative);
   font-size: clamp(35px, 10vw, 120px);
   margin: 20px 20px;
+  color: var(--color-light);
 }
 
 .table-social-survay {
@@ -404,6 +402,7 @@ column-gap: 7px;
   grid-template-rows: repeat(3  200px);
   gap: 1px;
   font-size: 20px;
+  color: var(--color-light);
   text-align: center;
   line-height: auto;
   font-family: var(--font-family-alternative);
@@ -417,6 +416,26 @@ column-gap: 7px;
 .big {
 grid-column-start: 1;
 grid-column-end: 4;
+}
+
+.general-information {
+  font-size: 25px;
+  margin: 20px;
+}
+
+.form-to-the-survay, .general-information-title {
+  color: var(--color-light);
+  font-size: clamp(20px, 30px, 50px);
+}
+
+.form-to-the-survay {
+  margin: 20px;
+} 
+
+.question {
+  margin: 30px;
+  font-size: clamp(15px, 20px, 30px);
+  color: var(--color-light);
 }
 
   @media (max-width: 1100px) {
