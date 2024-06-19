@@ -450,13 +450,10 @@ footer {
   background-color: var(--color-dark);
   font-size: 20px;
   color: var(--color-light);
- }
-
-
- a {
-line-height: auto;
+  line-height: auto;
  text-decoration: none;
  }
+
 
   @media (max-width: 1100px) {
     header {
