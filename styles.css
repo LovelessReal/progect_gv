@@ -454,6 +454,27 @@ footer {
  text-decoration: none;
  }
 
+ .selection_third_page {
+  font-size: 20px;
+  font-family: var(--font-family-base);
+  color: var(--color-light);
+ }
+
+ .cactus_shop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  gap: 1px;
+ }
+
+ .element-shop {
+  background-color: var(--color-light-gray);
+  display: inline-flex;
+  width: clamp(25%, 150px, 200px)
+ }
+
 
   @media (max-width: 1100px) {
     header {
@@ -491,7 +512,6 @@ footer {
     .banner{
       row-gap: 10px;
     }
-
       }
 
       @media (max-width: 750px) {
@@ -508,9 +528,4 @@ footer {
         .button {
           padding-inline: 15px;
         }
-
-      table{
-        display:flex;
-        justify-content: start;
-      }
       }
