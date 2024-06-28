@@ -529,4 +529,14 @@ footer {
         .button {
           padding-inline: 15px;
         }
+        .element-shop {
+          font-size: 10px;
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+
+        .contacts {
+          font-size: 10px;
+        }
+
       }
