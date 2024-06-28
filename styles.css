@@ -460,8 +460,10 @@ footer {
   color: var(--color-light);
  }
 
- .cactus_shop {
-  display: flex;
+ .grid-container_shop {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 250px;
   justify-content: space-between;
   align-items: center;
   margin-left: 50px;
@@ -470,9 +472,8 @@ footer {
  }
 
  .element-shop {
-  background-color: var(--color-light-gray);
-  display: inline-flex;
-  width: clamp(25%, 150px, 200px)
+  display:inline-grid;
+
  }
 
 
